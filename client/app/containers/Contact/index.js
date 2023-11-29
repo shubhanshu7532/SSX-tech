@@ -108,8 +108,9 @@ const ContactUsPage = () => {
         <h2>SSX Technology</h2>
         <p>Company Name: SSX Technology</p>
         <p>Contact Number: +91 78301 12907</p>
+        <p>Email: ssxstore@gmail.com</p>
         <p>Business Address: C-177, 1st Floor, Fateh Nagar, New Delhi, Delhi 110018</p>
-        <p>Website: [Your Website URL]</p>
+        {/* <p>Website: [Your Website URL]</p> */}
       </div>
     </div>
   );
