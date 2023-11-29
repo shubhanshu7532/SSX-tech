@@ -32,6 +32,8 @@ import Contact from '../Contact';
 import OrderSuccess from '../OrderSuccess';
 import OrderPage from '../OrderPage';
 import AuthSuccess from '../AuthSuccess';
+import AboutUsPage from '../AboutUs';
+import RefundPolicyPage from '../RefundPolicy';
 
 import Footer from '../../components/Common/Footer';
 import Page404 from '../../components/Common/Page404';
@@ -105,6 +107,14 @@ class Application extends React.PureComponent {
                 <Route
                   path='/dashboard'
                   component={Authentication(Dashboard)}
+                />
+                <Route
+                  path='/about'
+                  component={AboutUsPage}
+                />
+                <Route
+                  path='/refund'
+                  component={RefundPolicyPage}
                 />
                 <Route path='/404' component={Page404} />
                 <Route path='*' component={Page404} />
