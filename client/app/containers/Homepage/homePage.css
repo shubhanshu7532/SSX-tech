@@ -50,22 +50,35 @@
   overflow: hidden;
 }
 
-.carousal_track {
-  width: fit-content;
-  animation: carousal_track_animation 5s linear infinite;
-}
-
 @keyframes carousal_track_animation {
-  0% {
-    /* -webkit-transform: translate3d(0, 0, 0); */
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(calc(-50% - 12px), 0, 0);
+  }
+
+  /* 0% {
     transform: translate3d(0, 0, 0);
   }
 
   100% {
-    /* -webkit-transform: translate3d(calc(-50% - 12px), 0, 0); */
-    transform: translate3d(calc(-50% - 12px), 0, 0);
-  }
+    transform: translate3d(calc(-100% - 12px), 0, 0);
+  } */
 }
+
+.carousal_track {
+  width: fit-content;
+  animation: carousal_track_animation 58s linear infinite;
+  white-space: nowrap;
+  /* Prevent items from wrapping to the next line */
+
+}
+
+
 
 .carousal_container {
   display: flex;
