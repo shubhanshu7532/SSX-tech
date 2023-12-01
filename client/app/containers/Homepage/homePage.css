@@ -1,0 +1,109 @@
+.hero_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.main_header {
+  max-width: 340px;
+  margin: 40px 12px 24px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 56px;
+}
+
+.header_description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.shop_button {
+  width: 8rem;
+  background: black;
+  font-size: 1rem;
+  border-radius: 24px;
+  padding: 0.5rem;
+  margin : 1rem 0;
+}
+
+.shop_button span {
+    font-weight: 800;
+    color: white;
+}
+
+.hero_carousal_container {
+    grid-gap: 24px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 72px 0;
+    overflow: hidden;
+}
+
+.carousal_track {
+    width: fit-content;
+    animation: carousal_track_animation  5s linear infinite;
+
+}
+
+@keyframes carousal_track_animation {
+    0% {
+            /* -webkit-transform: translate3d(0, 0, 0); */
+            transform: translate3d(0, 0, 0)
+        }
+
+        100% {
+            /* -webkit-transform: translate3d(calc(-50% - 12px), 0, 0); */
+            transform: translate3d(calc(-50% - 12px), 0, 0)
+        }
+}
+
+.carousal_container {
+    /* display: grid;
+        grid-auto-columns: -webkit-min-content;
+        grid-auto-columns: min-content;
+        grid-auto-flow: column; */
+        /* width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; */
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+}
+
+.product_image {
+    width: fit-content;
+    border-radius: 14;
+    aspect-ratio: 1;
+}
+
+@media (min-width: 500px) {
+  .main_header {
+    max-width: 580px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main_header {
+    max-width: 870px;
+    font-size: 72px;
+    line-height: 76px;
+  }
+
+  .header_description {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
