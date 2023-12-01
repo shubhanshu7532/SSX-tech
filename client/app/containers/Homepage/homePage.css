@@ -33,58 +33,51 @@
   font-size: 1rem;
   border-radius: 24px;
   padding: 0.5rem;
-  margin : 1rem 0;
+  margin: 1rem 0;
 }
 
 .shop_button span {
-    font-weight: 800;
-    color: white;
+  font-weight: 800;
+  color: white;
 }
 
 .hero_carousal_container {
-    grid-gap: 24px;
-    position: relative;
-    z-index: 2;
-    margin: 0 auto;
-    padding: 72px 0;
-    overflow: hidden;
+  grid-gap: 24px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 72px 0;
+  overflow: hidden;
 }
 
 .carousal_track {
-    width: fit-content;
-    animation: carousal_track_animation  5s linear infinite;
-
+  width: fit-content;
+  animation: carousal_track_animation 5s linear infinite;
 }
 
 @keyframes carousal_track_animation {
-    0% {
-            /* -webkit-transform: translate3d(0, 0, 0); */
-            transform: translate3d(0, 0, 0)
-        }
+  0% {
+    /* -webkit-transform: translate3d(0, 0, 0); */
+    transform: translate3d(0, 0, 0);
+  }
 
-        100% {
-            /* -webkit-transform: translate3d(calc(-50% - 12px), 0, 0); */
-            transform: translate3d(calc(-50% - 12px), 0, 0)
-        }
+  100% {
+    /* -webkit-transform: translate3d(calc(-50% - 12px), 0, 0); */
+    transform: translate3d(calc(-50% - 12px), 0, 0);
+  }
 }
 
 .carousal_container {
-    /* display: grid;
-        grid-auto-columns: -webkit-min-content;
-        grid-auto-columns: min-content;
-        grid-auto-flow: column; */
-        /* width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content; */
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
 }
 
 .product_image {
-    width: fit-content;
-    border-radius: 14;
-    aspect-ratio: 1;
+  width: 218px;
+  height: 272px;
+  border-radius: 26px;
+  aspect-ratio: 1;
 }
 
 @media (min-width: 500px) {
