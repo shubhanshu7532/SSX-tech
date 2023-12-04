@@ -10,8 +10,8 @@ import { Card, CardBody, CardHeader } from 'reactstrap';
 import RangeSlider from '../../Common/RangeSlider';
 
 const priceMarks = {
-  1: { label: <p className='fw-normal text-black'>$1</p> },
-  80000: { label: <p className='fw-normal text-black'>$80000</p> }
+  1: { label: <p className='fw-normal text-black'>₹1</p> },
+  80000: { label: <p className='fw-normal text-black'>₹80000</p> }
 };
 
 const rateMarks = {
